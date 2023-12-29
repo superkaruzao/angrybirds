@@ -1,0 +1,312 @@
+@import '../base';
+
+main {
+    .container1 {
+        background: url(../../img/bgs/bg1.webp) center no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+
+            .title {
+                background-image: linear-gradient(320deg, #f4e393 , #fbb238 );
+                color: #000;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;   
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                color: #fff;
+                font-size: 1.2rem;
+                margin-top: 0rem;
+                font-weight: 600;
+            }
+
+            .button {
+                position: relative;
+                width: 100%;
+                padding: 1.5rem 1rem;
+                background: rgb(37, 141, 25);
+                border-radius: 1rem;
+                font-size: 1.5rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: #fff;
+                margin-top: 2rem;
+
+                .neve {
+                    position: absolute;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    top: 0;
+                    left: 0;
+                    transform: translateY(-20%);
+
+                    img {
+                        width: 15%;
+                    }
+                }
+            }
+
+            .persona {
+                display: grid;
+                width: 100%;
+                margin-top: 3rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cervos {
+            display: grid;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(30%);
+            z-index: 999;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .container2 {
+        background: #00163E;
+        padding: 4rem 0;
+        position: relative;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+
+            .persona {
+                display: grid;
+                width: 90%;
+                margin: auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text {
+                color: #fff;
+                font-size: 1.2rem;
+            }
+
+            .modals {
+                display: grid;
+                width: 100%;
+                grid-gap: 1rem;
+                margin-top: 2rem;
+
+                .modal {
+                    display: grid;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .cervos {
+            display: grid;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(30%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .container3 {
+        background: url(../../img/bgs/bg2.png) center repeat;
+        padding: 4rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+
+            .mockup {
+                display: grid;
+                width: 100%;
+                position: relative;
+
+                & > img {
+                    width: 100%;
+                    z-index: 9999;
+                    overflow: hidden;
+                }
+
+                .video {
+                    display: grid;
+                    width: 94.5%;
+                    height: 45vw;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-51%) translateX(2.85%);
+                    left: 0;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .title {
+                color: #fff;
+                margin-top: 2rem;
+                font-size: 2rem;
+            }
+
+            .text {
+                font-weight: 500;
+                color: #fff;
+                margin-top: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .container4 {
+        background: #212121;
+        padding: 4rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+
+            .title {
+                font-size: 2rem;
+                color: #fff;
+                font-weight: 800;
+            }
+
+            .text {
+                color: #fff;
+                font-size: 1.2rem;
+                margin-top: 0.75rem;
+            }
+
+            .content {
+                width: 100%;
+
+                .persona {
+                    display: grid;
+                    width: 100%;   
+
+                    img {
+                        width: 50%;
+                        margin: auto;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+
+            .content1 {
+                .title {
+                    color: rgb(0, 144, 216);
+                }
+            }
+
+            .content2 {
+                .title {
+                    color: rgb(78, 169, 59);
+                }
+            }
+            
+            .content3 {
+                .title {
+                    color: rgb(255, 221, 0);
+                }
+            }
+        }
+    }
+
+    .container5 {
+        background: #00e8fe;
+        padding: 4rem 0 0 0;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+
+            & > .title {
+                color: #000;
+                font-size: 4rem;
+                font-weight: 800;
+            }
+
+            @import '../faq';
+        }
+
+        .cervos {
+            display: grid;
+            width: 100%;
+            margin-top: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    background: #d7ecf1;
+    margin-top: -0.1rem;
+    padding-bottom: 2rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-family: 'logo', sans-serif;
+            color: #fff;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+            -webkit-text-fill-color: #fff;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .link {
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
